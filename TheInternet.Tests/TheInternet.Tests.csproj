@@ -14,6 +14,8 @@
     <ItemGroup>
         <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+        <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="75.0.3770.90" />
     </ItemGroup>
 
 </Project>
