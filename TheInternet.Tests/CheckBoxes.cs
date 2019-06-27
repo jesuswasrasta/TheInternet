@@ -33,6 +33,15 @@ namespace TheInternet.Tests
             Assert.IsTrue(isLastChecked);
         }
         
+       [Test]
+        public void SecondCheckedByCssSelector()
+        {   
+            driver.Url = "http://the-internet.herokuapp.com/checkboxes";
+            var checkBox = driver.FindElement(By.CssSelector(":checked"));
+
+            Assert.IsTrue(checkBox.Selected);
+        }
+        
         [Test]
         public void CheckFirstUncheckedSecond()
         {   
